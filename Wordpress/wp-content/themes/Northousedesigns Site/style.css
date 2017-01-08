@@ -1,0 +1,140 @@
+/*
+Theme Name: To Be Announced
+Author: Alex Nordhausen
+Author URI: http://wordpress.org/
+Description: My site, in progress.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: tobeannounced
+*/ 
+
+/* font-family: 'Open Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,400');
+/* font-family: 'Raleway', sans-serif; */ 
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+/* font-family: 'Srikhand', serif; */ 
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+
+* { font-family: 'Open Sans', sans-serif; box-sizing: border-box;}
+html { padding: 0; margin: 0; }
+body { padding: 0; margin: 0; font-size: 3.75vw; background-color: #FFF; }
+
+/* Misc. Styles */
+p { padding: 0px 25px; color: #000; }
+h1 { text-transform: uppercase; padding: 0px 25px; color: #000; font-weight: 900;  }
+h2 { padding: 0px 25px; font-size: 2.5em;}
+h3 { padding: 0px 25px; }
+h4 { padding: 0px 25px; }
+h5 { padding: 0px 25px; }
+h6 { padding: 0px 25px; }
+.accent { color: #FFF; font-weight: 900; }
+
+.wrapper { width: 100%; }
+.layer { float: left; }
+
+/* Subheader */
+#header { width: 100%; height: 15em; }
+#header #desktop { display: none; }
+#header #mobile { display: block; width: 100%; }
+#header #mobile .overlay { position: absolute; width: 100%; height: 15em; background: rgba(0, 0, 0, 0.5);}
+#header #mobile #header-logo { position: absolute; top: 25px; left: 50px; width: 15%; height: auto; float: left; }
+#header #header-img-mobile { width: 100%; height: 100%; }
+#header #header-text h1.head-text { font-family: 'Raleway', sans-serif; text-transform: uppercase; font-size: 1.5em; font-weight: 100; color: #fff; }
+
+/* Body */
+#body { text-align: center; }
+#body #content { width: 100%; }
+#body #content .wrapper { padding: 50px; }
+#body #content .wrapper h1 { font-weight: 100; font-size: 2em; }
+
+/* Contact Form */
+#contact_form { width: 100%; background: #3E6BA8; min-height: 250px; }
+#contact_form h2 { color: #fff; }
+#contact_form p { color: #fff; }
+#contact_form h2 { color: #fff; }
+#contact_form p { color: #fff; }
+#contact_form select, #contact_form input, #contact_form input[type="submit"], #contact_form textarea { font-family: 'Raleway', sans-serif; padding: 15px; border: none; color: #000; width: 100%; margin: 5px auto; }
+#contact_form select, #contact_form input, #contact_form input[type="submit"] { height: 3em; }
+#contact_form input[type="submit"] { cursor: pointer; background: #6699D6; border-bottom: 3px solid #083D7D; opacity: 1; transition: 0.3s; color: #fff; line-height: 1em; font-size: 1.3em; font-weight: bold; }
+#contact_form input[type="submit"]:hover { opacity: 0.9; transition: 0.3s; }
+#contact_form .wpcf7 form .form-controller {  }
+#contact_form .wpcf7 form .form-controller.left { width: 100%; clear: left; margin: 5px auto; }
+#contact_form .wpcf7 form .form-controller.right { width: 100%; clear: right; margin: 5px auto; }
+
+/* Our Team */
+#team { width: 100%; }
+#team .wrapper { width: 100%; }
+#team .wrapper .team-member { display: block; width: 100%; padding: 50px 15px; height: auto; height: auto; border-bottom: 3px solid white; }
+#team .wrapper .team-member.darkblue { float: left; background-color: #5F88C0; }
+#team .wrapper .team-member { float: left; background-color: #8EAEDA; }
+#team .wrapper .team-member .image { width: 100%; float: left; }
+#team .wrapper .team-member .image img { width: 100%; border-radius:0px; box-shadow: 2px 2px 10px black;}
+#team .wrapper .team-member .blurb { width: 100%; float: left; }
+#team .wrapper .team-member .blurb p, .blurb h2 { color: white; }
+#team .wrapper .team-member .blurb h2 { }
+
+/* Testimonials */
+#testimonials { display: flex; justify-content: center; align-items: center; width: 100%; background: #fff; height: 16em; }
+#testimonials .testimonial p { padding: 0.8em; }
+#testimonials .testimonial .name { color: #847DA4; }
+#testimonials .testimonial .from { color: #847DA4; }
+
+/* Footer */
+#footer { min-height: 4em; height: auto; background: #000; width: 100%; }
+#footer p { color: #fff; }
+
+@media screen and (min-width: 960px) {
+
+	body { font-size: 14px; }
+	.wrapper { width: 960px; margin: auto; }
+
+	/* Header */
+	#header { width: 100%; height: 450px; }
+	#header #desktop { display: block; border-bottom: 5px solid #3E6BA8; width: 100%; }
+	#header #desktop .overlay { position: absolute; width: 100%; height: 450px; background: rgba(0, 0, 0, 0.7); }
+	#header #mobile { display: none; }
+	#header #desktop #header-logo { position: absolute; top: 25px; left: 50px; width: 8%; height: auto; float: left; }
+	#header #header-img { width: 100%; height: 100%; }
+
+	#header #header-text { position: absolute; top: 0; line-height: 400px; margin: auto; width: 100%; text-align: center; }
+	#header #header-text h1.head-text { font-family: 'Raleway', sans-serif; text-transform: uppercase; font-size: 3.5em; font-weight: 100; color: white; }
+
+	#nav { position: absolute; z-index: 9999; top: 25px; right: 25px; }
+	#nav ul#menu-primary-menu { list-style: none; display: flex; align-content: space-between; }
+	#nav ul#menu-primary-menu li a { color: white; padding: 0 15px; font-weight: 100; transition: 0.3s; }
+	#nav ul#menu-primary-menu li a:hover { font-weight: 900; transition: 0.3s; }
+
+	/* Body */
+	#body {  }
+	#body #content .wrapper { padding: 50px; }
+	#body #content .wrapper h1 { font-weight: 100; font-size: 2em; }
+
+	/* Contact Form */
+	#contact_form { width: 100%; min-height: 250px; height: auto; }
+	#contact_form .wrapper { }
+	#contact_form .wpcf7 form .form-controller.left { width: 49.5%; float: left; margin: 5px 3px 0px 0px; }
+	#contact_form .wpcf7 form .form-controller.right { width: 49.5%; float: right; margin: 5px 0px 0px 5px; }
+
+	#contact_form #form_copy { width: 100%; float: left; text-align: center; font-weight: bold; padding: 25px 0 0 0; }
+	#contact_form #form { width: 100%; float: right; text-align: center; }
+
+	/* Testimonials */
+	#testimonials { display: flex; justify-content: center; align-items: center; width: 100%; background: #fff; height: 350px; }
+	#testimonials .overlay { position: absolute; width: 100%; height: 350px; background: rgba(0, 0, 0, 0.7); }
+	#testimonials .testimonial { position: absolute; }
+	#testimonials .testimonial p { padding: 15px 250px ; }
+	#testimonials .testimonial .name { color: #1E68C1; }
+	#testimonials .testimonial .from { color: #1E68C1; }
+
+	/* About Our Team */
+	#team { min-height: 250px; }
+	#team .wrapper .team-member { display: flex; align-items: center; justify-content: center; width: 50%; padding: 50px 15px; height: auto; height: 450px; }
+	#team .wrapper .team-member .image { width: 30%; float: left; }
+	#team .wrapper .team-member .blurb { width: 60%; float: right; }
+	/* Footer */
+	#footer { min-height: 50px; }
+
+
+}
